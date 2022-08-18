@@ -1,0 +1,26 @@
+ Kaeli Rivera
+August 17, 2022
+Foundations in Programming: Python
+Assignment06 https://github.com/kalaniriv/IntroToProg-Python-Mod06
+To Do List Python Script
+Introduction
+In this assignment, I modified a python script that first ingests an existing .txt file, then allows the user to choose from a menu of options to 1) add more to-do items to the list, 2) remove items from the list, 3) save the file, or 4) exit out of the program.
+Step 1: Writing (Modifying) the Python Script
+The first step was to copy the partially complete starter python script into PyCharm, then fill in the missing pieces so it would properly execute the steps indicated. The script starts by declaring the variables that will used throughout the script.
+The program then defines four functions in the ‘processing’ portion of the code. The first functions reads data from the ToDoFile.txt file that I created in the Assignment06 folder. For the second function, which allows the user to add data to the list, I used the existing code for the dictionary row, then appended that row to the list_of_rows variable. The function then returns list_of_rows to be stored for later use. The third function allows the user to remove an item from the list. In this function, I added a ‘for’ loop that cycles through the rows in list_of_rows and identifies the one where the task the user wants to remove matches the task portion of the existing dictionary row. For the fourth function, which writes the final to do list to the ToDoFile.txt file, I first opened the file and indicated I wanted to write to it, then I used another ‘for’ loop to cycle through each row in list_of_rows and write the task and priority to the .txt file. The function then closes the file and returns the list_of_rows again.
+The presentation portion of the code defines five additional functions. The first presents the user with a menu of four options (outlined above). The second takes the user’s input and returns it as the variable ‘choice.’ The third uses a ‘for’ loop to display the existing list of items on the list to the user. For the fourth function, I added two variables, ‘task’ and ‘priority,’ which ask the user to input the task they want to add and the corresponding priority for that task. Those variables are then returned so that they can be used in the processing function to add a new task to the list. For the fifth function, I created a variable called ‘task’ that takes the user’s input for the task they want to remove from the list and returns it for use in the processing function that removes a task from the list.
+In the main body of the script, it reads in the contents of the ToDoFile.txt file, then displays the menu of options to the user. If the user selects option one, they will be prompted to provide a task and priority to add to the list. If they select option two, they will be asked to input the task they want to remove from the list. If they select option three, the program will save the list to the ToDoFile.txt file, and if they select option four, the program will stop running.
+Step 2: Using PyCharm to Run the Script
+The next step was to run the script using PyCharm (Figure 2). The program first provided a menu of four options and asked me to pick one. My first selection was option one, and the program then asked me to enter a task and priority for the new item. Next, I picked option two to remove a task from the
+ 
+ list. When prompted, I entered ‘mop’ to remove that item from the list. After making those edits, I decided to select option three and save the updated list. After that, I picked option four and I ended the program.
+Figure 1. Running the script using PyCharm.
+Step 3: Using the Terminal to Run the Python Script
+The final step was to run the script using the terminal app. I first used the change directory (“cd”) command to navigate to my file (Documents > _PythonClass > Assignment06). Once in the proper folder, I ran the command “python Assignment06.py” to begin executing the script. I followed the prompts to provide add a new to-do and remove an existing one and was able to see the appropriate output. I then saved the updated list to the .txt file, then I exited the program.
+  
+  Figure 2. Using the terminal to execute the python script.
+I then checked the ToDoFile.txt file to ensure the edits I made by running the script in the terminal app were captured correctly (Figure 3).
+
+  Figure 3. ToDoFile.txt file correctly logging my submissions from PyCharm and the terminal app.
+Summary
+In this assignment, I was able to utilize and practice the skills we’ve been learning in class to compound my knowledge and understanding of the concepts. I found the repetition of a similar process to Assignment05 helpful to begin to cement the learnings in my mind. I also appreciated being able to read through the existing code in the starter file to gain a better understanding of how more complicated code is formatted and written by experienced python users.
